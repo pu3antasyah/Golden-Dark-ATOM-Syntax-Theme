@@ -1,4 +1,4 @@
-# Golden Dark ATOM Syntax by Malayatimes.
+# Golden Dark ATOM Syntax
 
 ![ATOM Golden Dark Syntax Theme](https://4.bp.blogspot.com/-V0GcSpgMO7k/W4Og-S586JI/AAAAAAAAC58/ymiyi3uKtSs-Fss-DfVdOJSVTwRFcZAMgCLcBGAs/s1600/golden-dark-theme.png)
 
