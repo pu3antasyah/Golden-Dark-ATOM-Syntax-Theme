@@ -11,7 +11,10 @@
     "Fira Code",
     "Operator Mono"
   ],
-  "repository": "https://github.com/pu3antasyah/golden-dark-syntax",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pu3antasyah/Golden-Dark-ATOM-Syntax-Theme.git"
+  },
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
