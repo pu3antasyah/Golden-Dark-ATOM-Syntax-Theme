@@ -3,6 +3,7 @@
   "theme": "syntax",
   "version": "0.0.0",
   "description": "A golden dark syntax for ATOM by Shah Danial",
+  "private": false,
   "keywords": [
     "syntax",
     "theme",
@@ -11,10 +12,7 @@
     "Fira Code",
     "Operator Mono"
   ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/pu3antasyah/Golden-Dark-ATOM-Syntax-Theme.git"
-  },
+  "repository": "https://github.com/pu3antasyah/Golden-Dark-ATOM-Syntax-Theme",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
