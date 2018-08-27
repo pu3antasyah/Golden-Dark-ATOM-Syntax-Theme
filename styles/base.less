@@ -1,0 +1,457 @@
+@import "syntax-variables";
+
+atom-text-editor {
+  font-family: "OperatorMono Nerd Font", Consolas, Lucida Console, monospace;
+
+  // Remove line highlight
+  .line.highlight-line {
+    background-color: transparent !important;
+  }
+
+  background-color: @syntax-background-color;
+  color: @syntax-text-color;
+
+  // thin line to the right
+  .wrap-guide {
+    background-color: @dark-gray;
+  }
+
+  .indent-guide {
+    color: @syntax-indent-guide-color;
+  }
+
+  // little things after the end of each line and little dots before each line
+  .invisible-character {
+    color: @syntax-invisible-character-color;
+  }
+
+  // side bit with numbers
+  .gutter {
+    background-color: @syntax-gutter-background-color;
+    color: @dark-gray !important;
+  }
+
+  .gutter .line-number.folded,
+  .gutter .line-number:after,
+  .fold-marker:after {
+    color: @gray;
+  }
+
+  .invisible {
+    color: @syntax-text-color;
+  }
+
+  .cursor {
+    color: @syntax-cursor-color;
+  }
+
+  .selection .region {
+    background-color: @syntax-selection-color;
+  }
+}
+
+
+// Syntax styles
+
+// // comment
+.syntax--comment {
+  color: @light-gray;
+}
+
+// @, !important, etc.
+.syntax--keyword {
+  color: @blue;
+
+  &.syntax--control {
+    color: @blue;
+  }
+
+  &.syntax--operator {
+     color: #ce4c4c;
+     font-family: "Fira Code";
+     font-weight: bold;
+  }
+
+  &.syntax--other.syntax--special-method {
+    color: @blue;
+    font-style: italic;
+  }
+
+  &.syntax--other.syntax--unit {
+    color: @orange;
+  }
+
+  &.syntax--important {
+    color: @yellow;
+  }
+}
+// ni var function
+.syntax--storage {
+  color: @yellow;
+  // font-weight: bold;
+  font-family: 'flottflott';
+  font-size: 1.5em;
+}
+
+.syntax--constant {
+  color: @yellow;
+
+  &.syntax--character.syntax--escape {
+    color: @cyan;
+  }
+
+  &.syntax--numeric {
+    color: @orange;
+    // font-weight: bold;//asal takde
+  }
+
+  &.syntax--other.syntax--color {
+    color: @cyan;
+  }
+
+  &.syntax--other.syntax--symbol {
+    color: @green;
+  }
+}
+
+.syntax--variable {
+  color: @blue;
+
+  &.syntax--interpolation {
+    color: darken(@blue, 10%);
+  }
+
+  &.syntax--parameter.syntax--function {
+    color: @blue;
+  }
+}
+
+.syntax--invalid.syntax--illegal {
+  background-color: @red;
+  color: @syntax-background-color;
+}
+
+.syntax--string {
+  color: @green;
+
+  &.syntax--regexp {
+    color: @green;
+
+    .syntax--source.syntax--ruby.syntax--embedded {
+      color: @orange;
+    }
+  }
+
+  &.syntax--other.syntax--link {
+    color: @red;
+  }
+}
+
+.syntax--punctuation {
+  &.syntax--definition {
+    &.syntax--comment {
+      color: @light-gray;
+    }
+
+    &.syntax--string {
+      color: @green;
+    }
+
+    &.syntax--variable {
+      color: @blue;
+    }
+    &.syntax--parameters,
+    &.syntax--array {
+      color: @syntax-text-color;
+    }
+
+    &.syntax--heading,
+    &.syntax--identity {
+      color: @blue;
+    }
+
+    &.syntax--bold {
+      color: @light-orange;
+      font-weight: bold;
+    }
+
+    &.syntax--italic {
+      color: @purple;
+      font-style: italic;
+    }
+
+    &.syntax--tag {
+      color: @dark-yellow;
+    }
+
+    &.syntax--bracket {
+      color: @white;
+    }
+  }
+  &.syntax--separator {
+    color: @white;
+  }
+  &.syntax--section.syntax--embedded {
+    color: darken(@red, 10%);
+  }
+
+}
+
+.syntax--support {
+  &.syntax--class {
+    color: @blue;
+  }
+
+  &.syntax--function  {
+    color: @purple;
+    font-style: italic;
+    // font-weight: bold;
+
+    &.syntax--any-method {
+      color: @blue;
+    }
+  }
+  &.syntax--property-name {
+    color: @purple;
+  }
+  &.syntax--constant {
+    color: @yellow;
+  }
+}
+
+.syntax--entity {
+  &.syntax--name.syntax--function {
+    color: #d49b67;
+    font-weight: bold;
+  }
+  &.syntax--name.syntax--type {
+    color: @yellow;
+  }
+
+  &.syntax--other.syntax--inherited-class {
+    color: @green;
+  }
+  &.syntax--name.syntax--class, &.syntax--name.syntax--type.syntax--class {
+    color: @yellow;
+  }
+
+  &.syntax--name.syntax--section {
+    color: @blue;
+  }
+
+  &.syntax--name.syntax--tag {
+    color: @dark-yellow;
+    text-decoration: none;
+  }
+
+  &.syntax--other.syntax--attribute-name {
+    color: @yellow;
+
+    &.syntax--id {
+      color: @blue;
+    }
+  }
+}
+
+.syntax--meta {
+  &.syntax--class {
+    color: @blue;
+  }
+
+  &.syntax--link {
+    color: @green;
+  }
+
+  &.syntax--require {
+    color: @blue;
+  }
+
+  &.syntax--selector {
+    color: @purple;
+  }
+
+  &.syntax--separator {
+    background-color: @gray;
+    color: @syntax-text-color;
+  }
+
+  &.syntax--sgml span {
+    color: @purple !important;
+  }
+}
+
+.syntax--none {
+  color: @syntax-text-color;
+}
+
+.syntax--markup {
+  &.syntax--bold {
+    color: @orange;
+    font-weight: bold;
+  }
+
+  &.syntax--changed {
+    color: @purple;
+  }
+
+  &.syntax--deleted {
+    color: @red;
+  }
+
+  &.syntax--italic {
+    color: @purple;
+    font-style: italic;
+  }
+
+  &.syntax--heading .syntax--punctuation.syntax--definition.syntax--heading {
+    color: @blue;
+  }
+
+  &.syntax--inserted {
+    color: @green;
+  }
+
+  &.syntax--list {
+    color: @red;
+  }
+
+  &.syntax--quote {
+    color: @orange;
+  }
+
+  &.syntax--raw.syntax--inline {
+    color: @green;
+  }
+}
+
+.syntax--source.syntax--gfm .syntax--markup {
+  -webkit-font-smoothing: auto;
+  &.syntax--heading {
+    color: @green;
+  }
+}
+
+
+// Mini editor
+
+atom-text-editor[mini] .scroll-view {
+  padding-left: 1px;
+}
+
+// @import "shah-custom";
+atom-text-editor .line-number {
+    color: #999;
+}
+atom-text-editor.editor .selection .region {
+  background-color: rgba(255, 68, 0, 0.2);
+}
+.syntax--keyword.syntax--operator {
+    font-weight: bold;
+}
+.syntax--meta.syntax--brace.syntax--round.syntax--js {
+    font-family: "Fira Code";
+    font-size: 12.4px;
+}
+.syntax--variable {
+    color: #bd72b4;
+    font-style: italic;
+}
+.syntax--dom.syntax--js {
+    color: #5691de;
+    font-style: normal;
+}
+atom-text-editor .brace {
+
+  // font-weight: bold;
+}
+/* kurungan bukan cindition, myfunction(bla), new Array()*/
+atom-text-editor .syntax--bracket {
+   color: #d49b67 !important;
+  font-weight: bold;
+}
+
+atom-text-editor .line {
+   line-height: 20px;
+}
+
+/*nama function namafunction(arg) */
+atom-text-editor .syntax--entity.syntax--name.syntax--function {
+   color: #d49b67;
+}
+
+atom-text-editor .syntax--variable.syntax--dom.syntax--other.syntax--property {
+    font-style: italic;
+    color: #5691de;
+}
+/* [] */
+atom-text-editor .syntax--meta.syntax--brace.syntax--square {
+    color: #f5e08b;
+}
+/* contohnya keyword return */
+atom-text-editor .syntax--keyword.syntax--control {
+    font-weight: bold;
+}
+/* boelan: true/false */
+atom-text-editor .syntax--boolean {
+    font-weight: bold;
+}
+
+atom-text-editor .syntax--typeof {
+    color: #ddca7e;
+}
+/* if else while for switch etc*/
+atom-text-editor .syntax--keyword.syntax--control {
+    color: #ddca7e;
+}
+// /*blue. macam parentNode, offsetTop */
+// atom-text-editor .syntax--variable {
+//     color: #5691de;
+// }
+/*function didalam function punya arg*/
+atom-text-editor .syntax--object, .syntax--variable.syntax--php{
+    color: #fff;
+    font-style: normal;
+}
+.syntax--variable.syntax--language.syntax--this.syntax--php {
+    color: #d49b67;
+}
+/*arg function(this_arg)*/
+atom-text-editor .syntax--variable.syntax--parameter.syntax--function {
+    color: #fff;
+    font-style: normal;
+}
+/* condition punya kurungan */
+.syntax--meta.syntax--brace.syntax--round {
+
+}
+/* Symbol quote pada pembuka dan penutup string */
+.syntax--punctuation.syntax--definition.syntax--string {
+    color: #d49b67;
+    font-weight: bold;
+    font-family: "Fira Code";
+}
+/* function, public function, class */
+// .syntax--storage
+/* Link */
+.syntax--markup.syntax--underline.syntax--link.syntax--https.syntax--hyperlink {
+    color: #6488f1;
+}
+
+atom-text-editor .gutter {
+    background-color: #212733;
+    color: #666;
+}
+/* callname var,function dalam variable ``. cth `hi variable abc adalah ${abc}` (abc is called)*/
+.syntax--punctuation.syntax--section.syntax--embedded.syntax--js {
+    color: #ce4c4c;
+    font-weight: bold;
+}
+/* Symbol opreator embed dalam variable ``. cth `hu variable abc adalah ${abc}`*/
+.syntax--source.syntax--js.syntax--embedded.syntax--source {
+    color: #00BFFD;
+}
+.syntax--support, .syntax--method-call .syntax--entity.syntax--name.syntax--function.syntax--js, .syntax--dom.syntax--support.syntax--function {
+    color: #bd72b4;
+    font-weight: normal;
+    font-style: italic;
+}
