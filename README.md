@@ -2,11 +2,11 @@
 
 **To make sure it look better, download and install this 3 font:**
 
-   1. https://github.com/pu3antasyah/FiraCode
+   1. [Fira Code](https://github.com/pu3antasyah/FiraCode)
 
-   2. https://www.dafont.com/flottflott.font
+   2. [Flott Flott](https://www.dafont.com/flottflott.font)
 
-   3. https://github.com/pu3antasyah/cse134b-hw3
+   3. [Operator Mono](https://github.com/pu3antasyah/cse134b-hw3)
 
 ### Better Editor typography settings
 
@@ -19,5 +19,5 @@
   3. Line Height: `1.5`
 
 
-NOTE: Need restart ATOM after install font/make changes Editor settings
+**NOTE**: Need restart ATOM after install font/make changes Editor settings
 
