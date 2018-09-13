@@ -66,7 +66,12 @@ atom-text-editor {
     color: @blue;
   }
 
-  &.syntax--operator {
+  &.syntax--operator.syntax--logical {
+     color: #96b38a;
+font-family: "Fira Code";
+  }
+
+  &.syntax--operator.syntax--comparison {
      color: #ce4c4c;
      font-family: "Fira Code";
      font-weight: bold;
@@ -345,7 +350,7 @@ atom-text-editor .line-number {
 atom-text-editor.editor .selection .region {
   background-color: rgba(255, 68, 0, 0.2);
 }
-.syntax--keyword.syntax--operator {
+.syntax--keyword.syntax--operator.syntax--logical {
     font-weight: bold;
 }
 .syntax--meta.syntax--brace.syntax--round.syntax--js {
@@ -371,7 +376,7 @@ atom-text-editor .syntax--bracket {
 }
 
 atom-text-editor .line {
-   line-height: 20px;
+   line-height: 25px;
 }
 
 /*nama function namafunction(arg) */
