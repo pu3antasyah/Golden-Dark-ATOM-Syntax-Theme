@@ -17,12 +17,11 @@ Golden Dark Syntax is a elegant UI for ATOM editor with dark background. It's co
  `Settings` > `Editor`:
 
   1. Font Family: `OperatorMono Nerd Font, PT Mono, Consolas, Ubuntu Mono, Monospace`
-  
+
   2. Font Size: `14`
-  
+
   3. Line Height: `1.5`
 
 
 **NOTE**: Need restart ATOM after install font/make changes Editor settings
-
 

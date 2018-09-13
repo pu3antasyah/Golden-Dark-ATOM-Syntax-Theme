@@ -1,20 +1,21 @@
 {
   "name": "golden-dark-syntax",
   "theme": "syntax",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "A golden dark syntax for ATOM by Shah Danial",
-  "private": false,
+  "private": true,
   "keywords": [
     "syntax",
     "theme",
     "dark",
-    "godlen",
+    "golden",
     "Fira Code",
-    "Operator Mono"
+    "Operator Mono",
+    "the best"
   ],
   "repository": "https://github.com/pu3antasyah/Golden-Dark-ATOM-Syntax-Theme",
   "license": "MIT",
   "engines": {
-    "atom": ">=1.0.0"
+    "atom": ">=1.0.0 "
   }
 }
