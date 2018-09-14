@@ -1,15 +1,20 @@
 # Golden Dark ATOM Syntax
 
+
 **JavaScript**
+
 ![ATOM Golden Dark Syntax Theme](https://4.bp.blogspot.com/-V0GcSpgMO7k/W4Og-S586JI/AAAAAAAAC58/ymiyi3uKtSs-Fss-DfVdOJSVTwRFcZAMgCLcBGAs/s1600/golden-dark-theme.png)
 
 **TypeScript**
+
 ![TypeScript Syntax Theme](https://3.bp.blogspot.com/-cEk2AW0_cq8/W5vLDoQC1kI/AAAAAAAAC8Q/zQNNutDvQAoEkqOHp-THE6akKcewx03DwCLcBGAs/s1600/MY-ATOM-SYNTAX.jpg)
 
 **PHP**
+
 ![TypeScript Syntax Theme](https://3.bp.blogspot.com/-3P-KRW9MR2U/W5vN_G8KDfI/AAAAAAAAC8c/2G5u97ylLWQ1StpRcmJw6hbMcYv9kGtIwCLcBGAs/s1600/Screenshot%2Bfrom%2B2018-09-14%2B23-00-20.png)
 
 Golden Dark Syntax is a elegant UI for ATOM editor with dark background. It's come with Fira Code and Flott Flott font setup (but need to install font below). The typography contrast is amazing.
+
 
 **To make sure it look better, download and install this 3 font:**
 
@@ -28,6 +33,17 @@ Golden Dark Syntax is a elegant UI for ATOM editor with dark background. It's co
   2. Font Size: `14`
 
   3. Line Height: `1.5`
+
+
+Recommended another packages:
+
+  1. minimap
+
+  2. file-icons
+
+  3. fancy-bracket-matcher
+
+  4. atom-ui
 
 
 **NOTE**: Need restart ATOM after install font/make changes Editor settings
